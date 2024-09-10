@@ -225,7 +225,7 @@ pub fn new(conf: &config::Configuration) -> Result<Configuration> {
                 .gateway
                 .com_dev_path
                 .clone()
-                .unwrap_or("/dev/spidev0.0".to_string()),
+                .unwrap_or("/dev/spidev0.1".to_string()),
         },
         i2c_path: Some(
             conf.gateway
