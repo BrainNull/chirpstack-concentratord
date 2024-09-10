@@ -231,7 +231,7 @@ pub fn new(conf: &config::Configuration) -> Result<Configuration> {
             conf.gateway
                 .i2c_dev_path
                 .clone()
-                .unwrap_or("/dev/i2c-1".to_string()),
+                .unwrap_or("/dev/i2c-3".to_string()),
         ),
         i2c_temp_sensor_addr: Some(0x39),
         sx1302_reset_pin: conf.gateway.get_sx1302_reset_pin("/dev/gpiochip0", 580),
